@@ -7,7 +7,7 @@ function FooterComponent() {
             <Container>
                 <Row>
                     <Col className="text-center py-3">
-                        © 2023 My Company. All rights reserved.
+                        &copy; {new Date().getFullYear()} Kaan Okul. All rights reserved
                     </Col>
                 </Row>
             </Container>
