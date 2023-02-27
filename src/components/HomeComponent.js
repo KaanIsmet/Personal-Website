@@ -5,13 +5,18 @@ function HomeComponent() {
     const [isDarkmode, setIsDarkmode] = useState(false)
 
     const handleDarkMode = () => {
-        setIsDarkmode(!isDarkmode)
-        //if darkmode is set to true, then change the background color to a dark background color
-
+        if (isDarkmode === false) {
+            setIsDarkmode(true)
+            document.body.style.backgroundColor = 'black'
         }
+        else {
+            setIsDarkmode(false)
+            document.body.style.backgroundColor = 'white'
+        }
+    }
 
     return (
-        <div className={`HomeComponent ${isDarkmode ? 'bg-dark text-light' : ''}`}>
+        <div className={`HomeComponent ${isDarkmode ? 'text-light' : ''}`}>
             <Navbar bg="primary" variant="dark">
                 <Navbar.Brand href="">Kaan Okul</Navbar.Brand>
                 <Nav className="mr-auto">
@@ -20,7 +25,7 @@ function HomeComponent() {
                     <Button onClick={handleDarkMode}>DarkMode </Button>
                 </Nav>
             </Navbar>
-            <div className={"container"}>
+            <Container>
                 <br/>
                 <h2>Kaan Okul</h2><br/>
                 <p className={"mb-5"}>Undergraduate at New Jersey Institute of Technology</p>
@@ -31,18 +36,12 @@ function HomeComponent() {
                         Database Systems Design & Management, Project Management, Web Application, Computer Networks, and Data Structures and Algorithms
                     </p>
                     <h2>Projects</h2>
-                    <li>
-                        Employee management App
-                    </li>
-                    <li>
-                        Photo Upload App
-                    </li>
-                    <li>
-                        Video Store Website
-                    </li>
+                    <li>Employee management App</li>
+                    <li>Photo Upload App</li>
+                    <li>Video Store Website</li>
                 </div>
-            </div>
-            <footer className="border-top text-dark fixed-bottom">
+            </Container>
+            <footer className="border-top fixed-bottom">
                 <Container>
                     <Row>
                         <Col className="text-center py-3">
