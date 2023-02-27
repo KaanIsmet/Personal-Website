@@ -2,7 +2,6 @@ import React from "react";
 import './App.css'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import HomeComponent from "./components/HomeComponent";
-import FooterComponent from "./components/FooterComponent";
 import ProjectsComponent from "./components/ProjectsComponent";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
             <Route path={"/projects"} element={<ProjectsComponent/>}></Route>
         </Routes>
       </Router>
-        <FooterComponent/>
     </div>
   );
 }

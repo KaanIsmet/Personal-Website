@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import {Nav, Navbar, Button} from "react-bootstrap";
+import {Nav, Navbar, Button, Container, Row, Col} from "react-bootstrap";
 function HomeComponent() {
     const [isDarkmode, setIsDarkmode] = useState(false)
 
@@ -42,6 +42,15 @@ function HomeComponent() {
                     </li>
                 </div>
             </div>
+            <footer className="border-top text-dark fixed-bottom">
+                <Container>
+                    <Row>
+                        <Col className="text-center py-3">
+                            &copy; {new Date().getFullYear()} Kaan Okul. All rights reserved
+                        </Col>
+                    </Row>
+                </Container>
+            </footer>
         </div>
     );
 }
