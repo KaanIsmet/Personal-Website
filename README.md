@@ -1,5 +1,3 @@
 # Requirements:
-* Bio page
-* Skills Page
-* Home page
-* Projects page
+* Remove the bio page, Project page, and Skills
+* Add a darkmode to your personal website
