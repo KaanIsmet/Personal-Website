@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Col, Row} from "react-bootstrap"
 function FooterComponent() {
     return (
-        <footer className="bg-primary text-light fixed-bottom">
+        <footer className="border-top text-dark fixed-bottom">
             <Container>
                 <Row>
                     <Col className="text-center py-3">
