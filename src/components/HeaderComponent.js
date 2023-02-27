@@ -5,11 +5,10 @@ function HeaderComponent() {
 
     return (
         <Navbar bg="primary" variant="dark">
-            <Navbar.Brand href="#home">My Blue Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">Kaan Okul</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link>
-            </Nav>
+                <Nav.Link href="#features">Skills</Nav.Link>
+                <Nav.Link href="#pricing">Projects</Nav.Link></Nav>
         </Navbar>
     );
 }
